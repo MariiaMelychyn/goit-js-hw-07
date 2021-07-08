@@ -1,13 +1,14 @@
 "use strict";
+{
+    /* <input type="text" placeholder="Ваше имя?" id="name-input" />
+  <h1>Привет, <span id="name-output">незнакомец</span>!</h1> */
+  }
+  
 
-let inputEl = document.getElementById("name-input");
-let nameOutput = document.getElementById("name-output");
+let inputEl = document.querySelector('#name-input');
+inputEl.addEventListener('input', onInputChange);
 
-inputEl.oninput = function () {
-    if (inputEl.value === ' ') {
-        nameOutput.innerHTML = 'незнакомец';
 
-    } else {
-        nameOutput.innerHTML = inputEl.value;
-    }
-}
+let nameOutput = document.querySelector('#name-output');
+
+

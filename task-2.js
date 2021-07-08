@@ -9,9 +9,12 @@ const ingredients = [
     'Приправы',
   ];
 
-  const ulEl = document.querySelector('#ingredients');
+  let ulList = document.getElementById("ingredients");
+  const foodIngredients = ingredients.forEach(ingredient => {
+  let items = document.createElement("li");
+  items.innerHTML = ingredient;
+  ulList.append(items);
+  parent.append(...items)
+});
 
-  const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
-  
-  ulEl.innerHTML = list;
-  
+console.log(foodIngredients);
