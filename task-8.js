@@ -5,7 +5,7 @@ let destroy = document.querySelector('[data-action = "destroy"]');
 let boxes = document.getElementById('boxes');
 
 render.addEventListener('click', getAmount);
-destroy.addEventListener('click', destroyAmount);
+destroy.addEventListener('click', destroyBoxes);
 
 function getAmount () {
     let amount = +document.querySelector('#controls input').value;
