@@ -5,14 +5,20 @@
   }
   
 
-let inputEl = document.querySelector('#name-input');
-inputEl.addEventListener('input', onInputChange);
+
+  const nameInput = document.querySelector("#name-input");
+// console.log(nameInput);
+const nameOutput = document.querySelector("#name-output");
+// console.log(nameOutput);
+
+nameInput.oninput = function () {
+  if (nameInput.value === "") {
+    nameOutput.innerHTML = "незнакомец";
+  } else {
+    nameOutput.innerHTML = nameInput.value;
+  }
+};
 
 
-let nameOutput = document.querySelector('#name-output');
 
 
-function onInputChange (event) {
-    inputEl = event.currentTarget.value;
-    console.log(inputEl);
-    inputEl !== ' ' ? (nameOutput.innerText = inputEl.trim()) : 'незнакомец';}
