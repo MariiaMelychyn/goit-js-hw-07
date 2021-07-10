@@ -20,5 +20,22 @@ nameInput.oninput = function () {
 };
 
 
+                //2 варіант
+// let input = document.getElementById("name-input");
+// //console.log(input);
+// let nameOutput = document.getElementById("name-output");
+// // console.log(nameOutput);
+// input.oninput = function () {
+//   if (nameInput.value === "") {
+//     nameOutput.innerHTML = "незнакомец";
+//   } else {
+//     nameOutput.innerHTML = nameInput.value;
+//   }
+// };
+
+
+
+
+
 
 
