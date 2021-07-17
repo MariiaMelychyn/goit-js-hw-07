@@ -35,6 +35,23 @@ nameInput.oninput = function () {
 
 
 
+// 3 варіант
+// const nameInput = document.querySelector('#name-input');
+// const nameOutput = document.querySelector('#name-output');
+// console.dir(nameInput);
+// nameInput.addEventListener('input', onInput);
+
+// function onInput({ target: { value } }) {
+//   // if (value.trim() === '') {
+//   //   nameOutput.textContent = 'незнакомец';
+//   // } else {
+//   //   nameOutput.textContent = value;
+//   // }
+//   nameOutput.textContent = value.trim() === '' ? 'незнакомец' : value;
+// }
+
+
+
 
 
 

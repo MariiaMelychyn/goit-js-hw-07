@@ -17,3 +17,20 @@ decrementBtn.addEventListener('click', event => {
     valueEl -= 1;
     counterValue.innerText = valueEl;
 })
+
+
+
+// 2 варіант
+// const [buttonDec, value, buttonInc] = document.querySelector(
+//     "#counter"
+//   ).children;
+  
+  
+//   const increment = () => (value.textContent = +value.textContent + 1);
+  
+//   const decriment = () => (value.textContent -= 1);
+  
+  
+//   buttonInc.addEventListener("click", increment);
+//   buttonDec.addEventListener("click", decriment);
+  
